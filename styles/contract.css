@@ -1,0 +1,50 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main div {
+  display: grid;
+  place-items: center; /* Center both vertically and horizontally */
+  max-height: 100vh; /* Full viewport height */
+}
+
+/* Media query for tablets and small screens */
+@media (max-width: 768px) {
+  main div {
+    padding: 15px; /* Reduced padding for smaller screens */
+    font-size: 0.9em; /* Smaller font size for better fit */
+  }
+}
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+  main div {
+    padding: 10px; /* Further reduced padding for mobile screens */
+    font-size: 0.8em; /* Further reduced font size for mobile screens */
+    max-width: 100%; /* Ensure the div takes full width on very small screens */
+  }
+}
+
+/* Target all <p> elements inside <div> elements within the <main> element */
+main div p {
+  font-size: 1.1em; 
+  line-height: 1.6; 
+  margin: 20px 0; 
+  padding: 0 15px; 
+  color: #333; /* Slightly darker text color for better contrast */
+  border-radius: 4px; /* Rounded corners for a softer look */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  padding: 20px;
+  background-color: #007bff; /* Background color for visibility */
+  color: white;
+  border-radius: 4px;
+  max-width: 75vw;
+}
