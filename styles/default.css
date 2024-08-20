@@ -39,6 +39,35 @@ h2 {
   font-weight: 300;
 }
 
+/* Link styles */
+
+/* Default state of links */
+a {
+  color: #ffff;
+  transition: color 0.3s, text-decoration 0.3s; /* Smooth transition */
+  text-decoration: none;
+}
+
+/* Hover state of links */
+a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Visited state of links */
+a:visited {
+  color: #ffff; 
+}
+
+/* Active state of links (when clicked) */
+a:active {
+  color: #003d7a;
+  text-decoration: underline; 
+}
+
+footer a {
+  color: #000;
+}
+
 /* Navigation styling */
 nav {
   background-color: #343a40; /* Dark gray background */
@@ -67,35 +96,7 @@ nav ul li a {
 nav ul li a:hover {
   background-color: #495057; /* Slightly lighter gray on hover */
   color: #ffffff;
-}
-
-main {
-  flex: 1; /* This makes the main section take up all available space */
-}
-
-/* Link styles */
-
-/* Default state of links */
-a {
-  color: #ffff;
-  transition: color 0.3s, text-decoration 0.3s; /* Smooth transition */
-  text-decoration: none;
-}
-
-/* Hover state of links */
-a:hover {
-  text-decoration: underline; /* Underline on hover */
-}
-
-/* Visited state of links */
-a:visited {
-  color: #ffff; 
-}
-
-/* Active state of links (when clicked) */
-a:active {
-  color: #003d7a;
-  text-decoration: underline; 
+  text-decoration: underline;
 }
 
 /* Navigation link active state */
@@ -103,9 +104,10 @@ nav ul li a:active {
   color: #003d7a; 
 }
 
-footer a {
-  color: #000;
+main {
+  flex: 1; /* This makes the main section take up all available space */
 }
+
 
 /* Footer styling */
 footer {
