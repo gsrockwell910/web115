@@ -1,19 +1,9 @@
-html, body {
-  height: 100%;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
+main {
   display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-main div {
-  display: grid;
-  place-items: center; /* Center both vertically and horizontally */
-  max-height: 100vh; /* Full viewport height */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+  margin: 0; /* Remove default margin */
 }
 
 /* Media query for tablets and small screens */
@@ -37,8 +27,7 @@ main div {
 main div p {
   font-size: 1.1em; 
   line-height: 1.6; 
-  margin: 20px 0; 
-  padding: 0 15px; 
+  margin: 20px 0;
   color: #333; /* Slightly darker text color for better contrast */
   border-radius: 4px; /* Rounded corners for a softer look */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
@@ -46,5 +35,5 @@ main div p {
   background-color: #007bff; /* Background color for visibility */
   color: white;
   border-radius: 4px;
-  max-width: 75vw;
+  max-width: 55vw;
 }
