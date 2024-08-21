@@ -40,3 +40,12 @@ main div p {
   color: white;
   max-width: 55vw; 
 }
+
+main div p a:first-of-type {
+  color: #000;
+}
+
+main div p a:hover {
+  color: white;
+  text-decoration: underline;
+}
