@@ -19,13 +19,12 @@ img {
   box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
-
 figcaption {
   text-align: center;
 }
 
 p {
-  margin: 0;
+  margin: 3% 0%;
   padding: 0;
   background: none;
 }
