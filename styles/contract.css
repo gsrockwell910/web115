@@ -1,4 +1,4 @@
-/* Target all <p> elements inside <div> elements within the <main> element (Just one now)*/
+/* Target all main p element*/
 main p {
   color: white;
   background-color: #007bff;
