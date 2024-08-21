@@ -23,17 +23,20 @@ main {
   }
 }
 
-/* Target all <p> elements inside <div> elements within the <main> element */
+main div {
+  background-color: #007bff; /* Background color for visibility */
+  box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-radius: 4px;
+  margin: auto;
+}
+
+/* Target all <p> elements inside <div> elements within the <main> element (Just one now)*/
 main div p {
   font-size: 1.1em; 
-  line-height: 1.6; 
-  margin: 20px 0;
+  line-height: 1.2em; 
+  margin: auto;
   color: #333; /* Slightly darker text color for better contrast */
-  border-radius: 4px; /* Rounded corners for a softer look */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   padding: 20px;
-  background-color: #007bff; /* Background color for visibility */
   color: white;
-  border-radius: 4px;
-  max-width: 55vw;
+  max-width: 55vw; 
 }
