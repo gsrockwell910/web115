@@ -113,12 +113,11 @@ main {
 p {
   font-size: 1.1em; 
   line-height: 1.2em; 
-  color: #000;
-  background-color: white;
+  color: #343a40;
   border-radius: 4px;
   padding: 20px;
   max-width: 55vw; 
-  background: #ccc;
+  background-color: #ffffff;
 }
 
 /* Footer styling */
