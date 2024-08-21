@@ -1,10 +1,29 @@
-main {
-  display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  height: 100vh; /* Full viewport height */
-  margin: 0; /* Remove default margin */
+main div {
+  box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border-radius: 4px;
+  margin: auto;
 }
+
+/* Target all <p> elements inside <div> elements within the <main> element (Just one now)*/
+main div p {
+  font-size: 1.1em; 
+  line-height: 1.2em; 
+  margin: auto;
+  background-color: #007bff;
+  padding: 20px;
+  color: white;
+  max-width: 55vw; 
+}
+
+main div p a:first-of-type {
+  color: #000;
+}
+
+main div p a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
 
 /* Media query for tablets and small screens */
 @media (max-width: 768px) {
@@ -21,31 +40,4 @@ main {
     font-size: 0.8em; /* Further reduced font size for mobile screens */
     max-width: 100%; /* Ensure the div takes full width on very small screens */
   }
-}
-
-main div {
-  background-color: #007bff; /* Background color for visibility */
-  box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  border-radius: 4px;
-  margin: auto;
-}
-
-/* Target all <p> elements inside <div> elements within the <main> element (Just one now)*/
-main div p {
-  font-size: 1.1em; 
-  line-height: 1.2em; 
-  margin: auto;
-  color: #333; /* Slightly darker text color for better contrast */
-  padding: 20px;
-  color: white;
-  max-width: 55vw; 
-}
-
-main div p a:first-of-type {
-  color: #000;
-}
-
-main div p a:hover {
-  color: white;
-  text-decoration: underline;
 }
