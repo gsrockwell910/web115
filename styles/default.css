@@ -127,5 +127,7 @@ footer a:not(:first-of-type){
 
 footer a:visited {
   color: #176161;
-  border: 0, 10, 0, 10 solid #000;
+  border-left: 2px solid #000;
+  border-right: 2px solid #000;
+  padding: 0 5px;
 }
