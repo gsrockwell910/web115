@@ -5,6 +5,7 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
+  overflow-x: hidden;
   overflow-y: scroll;
   scroll-behavior: smooth;
 }
@@ -19,7 +20,6 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  overflow-x: hidden;
 }
 
 /* Header styling */
@@ -106,10 +106,10 @@ nav ul li a:active {
 }
 
 main {
-  flex: 1; /* This makes the main section take up all available space */
   display: flex;
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
+  flex: 1;
   height: 100vh; /* Full viewport height */
   margin: 0; /* Remove default margin */
 }
