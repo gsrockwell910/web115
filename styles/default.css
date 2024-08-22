@@ -5,7 +5,8 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  overflow: scroll;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 /* General body styling */
