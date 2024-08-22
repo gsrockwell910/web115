@@ -17,6 +17,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 /* Header styling */
@@ -24,7 +25,7 @@ header {
   background-color: #007bff; /* Blue background */
   color: #ffffff; /* White text */
   text-align: center;
-  padding: 25px 10px;
+  padding: 25px 0px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   min-width: 100%;
 }
@@ -69,7 +70,6 @@ a:active {
 nav {
   background-color: #343a40; /* Dark gray background */
   min-width: 100%;
-  padding: 0px 10px;
 }
 
 nav ul {
@@ -140,7 +140,7 @@ footer a:not(:first-of-type){
   color: #000;
   border-left: 2px solid #000;
   border-right: 2px solid #000;
-  padding: 0 5px;
+  padding: 0px 5px;
 }
 
 footer a:visited {
