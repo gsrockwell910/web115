@@ -26,7 +26,6 @@ header {
   text-align: center;
   padding: 40px 0;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  width: 100%;
 }
 
 h1 {
@@ -69,6 +68,7 @@ a:active {
 /* Navigation styling */
 nav {
   background-color: #343a40; /* Dark gray background */
+  min-width: 100%;
 }
 
 nav ul {
