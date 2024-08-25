@@ -57,7 +57,6 @@ a {
 
 /* Hover state of links */
 a:hover {
-  /*color: #D67D3D; /* Rich Rust on hover */
   text-decoration: underline; /* Underline on hover */
 }
 
@@ -78,7 +77,7 @@ nav {
   min-width: 100%;
   display: flex;
   justify-content: space-evenly;
-  padding: 10px 0; /* Added padding to ensure proper spacing */
+  /*padding: 10px 0; /* Added padding to ensure proper spacing */
 }
 
 nav ul {
@@ -86,11 +85,12 @@ nav ul {
   margin: 0;
   padding: 0;
   text-align: center;
-  display: flex; /* Make the list items align horizontally */
+  /*display: flex; /* Make the list items align horizontally */
 }
 
 nav ul li {
-  margin: 0; /* Ensure no additional margin on list items */
+  /*margin: 0; /* Ensure no additional margin on list items */
+  display: inline;
 }
 
 nav ul li a {
