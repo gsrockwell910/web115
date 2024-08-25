@@ -149,7 +149,7 @@ footer div a:first-of-type {
   color: #F0E3C7;
 }
 
-footer a:visited {
+footer div a:first-of-type:visited {
   color: #2D6A4F; /* Forest Green for visited footer links */
 }
 
