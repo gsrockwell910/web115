@@ -1,7 +1,7 @@
 body > div {
   display: flex;
   flex-direction: column;
-  background: #FAF9F6;
+  background: #F0E3C7;
 }
 
 main {
@@ -27,6 +27,7 @@ p {
   margin: 3% 0%;
   padding: 0;
   background: none;
+  color: #2D6A4F;
 }
 
 ol {
