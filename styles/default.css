@@ -57,7 +57,7 @@ a {
 
 /* Hover state of links */
 a:hover {
-  color: #D67D3D; /* Rich Rust on hover */
+  /*color: #D67D3D; /* Rich Rust on hover */
   text-decoration: underline; /* Underline on hover */
 }
 
@@ -145,8 +145,8 @@ footer {
 }
 
 /* Footer link styles */
-footer a {
-  color: #D67D3D; /* Rich Rust for footer links */
+footer div a:first-of-type {
+  color: #F0E3C7;
 }
 
 footer a:visited {
@@ -154,7 +154,7 @@ footer a:visited {
 }
 
 footer div:nth-of-type(2) a {
-  color: #D67D3D; /* Rich Rust */
+  color: #F0E3C7; /* Rich Rust */
   border-left: 2px solid #D67D3D; /* Rich Rust border */
   border-right: 2px solid #D67D3D; /* Rich Rust border */
   padding: 0px 5px;
