@@ -1,15 +1,17 @@
-/* Target all main p element*/
+/* Target all main p elements */
 main p {
-  color: #F0E3C7;
-  background-color: #2D6A4F;
-  box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  color: #F8F4F1; /* Lighter text color for better contrast */
+  background-color: #1F2A38; /* Darker background color for better contrast */
+  box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow for depth */
 }
 
+/* Styling for the first link within main p elements */
 main p a:first-of-type {
-  color: #D67D3D;
+  color: #FFD400; /* More contrasting link color */
 }
 
+/* Hover state for links within main p elements */
 main p a:hover {
-  color: #F0E3C7;
+  color: #F8F4F1; /* Lighter text color on hover for better visibility */
   text-decoration: underline;
 }

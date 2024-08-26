@@ -1,35 +1,47 @@
+/* Updated stylesheet with new color scheme and higher contrast */
+
+/* General styling for div elements inside body */
 body > div {
   display: flex;
   flex-direction: column;
-  background: #F0E3C7;
+  background: #F8F4F1; /* Lighter background for higher contrast */
 }
 
+/* Main styling */
 main {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
+/* Styling for div elements inside main, except the first */
 main > div + div {
   flex: 1;
 }
 
+/* Styling for images */
 img {
   border-radius: 10px;
-  box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow for better depth */
 }
 
+/* Styling for figure captions */
 figcaption {
   text-align: center;
+  color: #1F2A38; /* Darker text color for better visibility */
 }
 
+/* Paragraph styling */
 p {
   margin: 3% 0%;
   padding: 0;
   background: none;
-  color: #2D6A4F;
+  color: #1F2A38; /* Lighter text color for higher contrast */
+  background-color: #F8F4F1; /* Darker background color for better contrast */
 }
 
+/* Ordered list styling */
 ol {
   list-style-type: upper-roman;
+  color: #1F2A38; /* Darker text color to match the new color scheme */
 }
