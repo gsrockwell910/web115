@@ -148,7 +148,7 @@ footer div a:first-of-type {
 }
 
 footer div a:first-of-type:visited {
-  color: #E4FDE1; /* Darker color for visited footer links */
+  color: #582630; /* Darker color for visited footer links */
 }
 
 footer div:nth-of-type(2) a {
@@ -161,5 +161,5 @@ footer div:nth-of-type(2) a {
 }
 
 footer div:nth-of-type(2) a:visited {
-  color: #E4FDE1; /* Darker color for visited links */
+  color: #582630; /* Darker color for visited links */
 }
