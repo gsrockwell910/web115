@@ -63,12 +63,12 @@ a:hover {
 
 /* Visited state of links */
 a:visited {
-  color: #F8F4F1; /* Darker shade for visited links */
+  color: #F8F4F1; 
 }
 
 /* Active state of links (when clicked) */
 a:active {
-  color: #1F2A38; /* Darker color when clicked */
+  color: #113537; /* Darker color when clicked */
   text-decoration: underline; 
 }
 
