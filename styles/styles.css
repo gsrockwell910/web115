@@ -4,7 +4,7 @@
 body > div {
   display: flex;
   flex-direction: column;
-  background: #F8F4F1; /* Lighter background for higher contrast */
+  background: var(--primary-color3); /* Lighter background for higher contrast */
 }
 
 /* Main styling */
@@ -28,7 +28,7 @@ img {
 /* Styling for figure captions */
 figcaption {
   text-align: center;
-  color: #1F2A38; /* Darker text color for better visibility */
+  color: var(--primary-color4); /* Darker text color for better visibility */
 }
 
 /* Paragraph styling */
@@ -36,12 +36,12 @@ p {
   margin: 3% 0%;
   padding: 0;
   background: none;
-  color: #1F2A38; /* Lighter text color for higher contrast */
-  background-color: #F8F4F1; /* Darker background color for better contrast */
+  color: var(--primary-color4); /* Lighter text color for higher contrast */
+  background-color: var(--primary-color3); /* Darker background color for better contrast */
 }
 
 /* Ordered list styling */
 ol {
   list-style-type: upper-roman;
-  color: #1F2A38; /* Darker text color to match the new color scheme */
+  color: var(--primary-color4); /* Darker text color to match the new color scheme */
 }
