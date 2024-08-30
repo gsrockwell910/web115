@@ -42,7 +42,7 @@ table {
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
-th, td {
+ th, td[data-color], td {
   border: 1px solid var(--primary-color4);
   text-align: left;
   min-width: 50%;
