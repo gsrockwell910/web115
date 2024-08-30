@@ -29,21 +29,39 @@ body > main:nth-child(3) > div:nth-child(1) > div:nth-child(2) {
 
 /* Color Ul styles */
 div > ul:first-of-type {
-  display: flex;
-  flex-wrap: wrap;
+  /*lex-wrap: wrap;*/
   list-style-type: none;
-  justify-content: center;
+  /*justify-content: center;*/
 }
 
 /* Color Ul */
 div > ul > li[data-color]{
-  padding: 2%;
+  padding: 3%;
   max-width: 100%;
 }
 
+table {
+  width: 75%;
+  align-self: center;
+  border-collapse: collapse;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+th, td {
+  border: 1px solid var(--primary-color4);
+  padding: 1%;
+  text-align: left;
+  width: 50%;
+}
+
+th {
+  background-color: var(--primary-color1);
+  color: var(--primary-color4);
+}
+
 /* Font Ul */
-div > ul:nth-of-type(2) > li {
-  padding: 1% 2%;
+div > ul:first-of-type > li {
+  margin: 0%;
 }
 
 /* Every h2 except for the header */
@@ -59,30 +77,30 @@ hr {
 }
 
 /* First li items */
-li[data-color="prim1"] {
+td[data-color="prim1"] {
   background-color: var(--primary-color1);
 }
 
-li[data-color="prim2"] {
+td[data-color="prim2"] {
   background-color: var(--primary-color2);
   color: var(--primary-color3);
 }
 
-li[data-color="prim3"] {
+td[data-color="prim3"] {
   background-color: var(--primary-color3);
 }
 
-li[data-color="prim4"] {
+td[data-color="prim4"] {
   background-color: var(--primary-color4);
   color: var(--primary-color3);
 }
 
-li[data-color="sec1"] {
+td[data-color="sec1"] {
   background-color: var(--secondary-color1);
   color: var(--secondary-color2);
 }
 
-li[data-color="sec2"] {
+td[data-color="sec2"] {
   background-color: var(--secondary-color2);
   color: var(--secondary-color1)
 }
@@ -97,6 +115,10 @@ body > div:nth-child(3) > main:nth-child(1) > div:nth-child(1) > div:nth-child(2
 /* fonts used */
 ol {
   list-style-type: circle;
+}
+
+ol > li {
+  margin-bottom: 2%;
 }
 
 /* Image styling */
