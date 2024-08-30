@@ -34,12 +34,7 @@ div > ul:first-of-type {
   /*justify-content: center;*/
 }
 
-/* Color Ul */
-div > ul > li[data-color]{
-  padding: 3%;
-  max-width: 100%;
-}
-
+/* Color Table */
 table {
   width: 75%;
   align-self: center;
@@ -49,9 +44,9 @@ table {
 
 th, td {
   border: 1px solid var(--primary-color4);
-  padding: 1%;
   text-align: left;
-  width: 50%;
+  min-width: 50%;
+  padding: 2%;
 }
 
 th {
