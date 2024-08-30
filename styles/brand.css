@@ -65,7 +65,7 @@ td[data-color="prim1"] {
 
 td[data-color="prim2"] {
   background-color: var(--primary-color2);
-  color: var(--secondary-color1);
+  color: var(--secondary-color2);
 }
 
 td[data-color="prim3"] {
