@@ -33,7 +33,7 @@ table {
   border: 1px solid var(--primary-color4);
   text-align: left;
   min-width: 50%;
-  padding: 1em;
+  padding: .4em;
 }
 
 th {
