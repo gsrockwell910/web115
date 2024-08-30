@@ -29,10 +29,10 @@ table {
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
- th, td[data-color], td {
+ th, td, td[data-color] {
   border: 1px solid var(--primary-color4);
   text-align: left;
-  /*min-width: 50%;*/ /* Consider if this should be kept, only works as intended on FireFox without some level of effort, without looks fine. */
+  min-width: 50%; /* Consider if this should be kept, only works as intended on FireFox without some level of effort, without looks fine. */
   padding: .4em;
 }
 
