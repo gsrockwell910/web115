@@ -161,7 +161,7 @@ nav ul li a {
 
 nav ul li a:hover {
   background-color: var(--primary-color2); /* More contrasting hover background color */
-  color: var(--primary-color3); /* Lighter text color on hover */
+  color: var(--secondary-color3); /* Lighter text color on hover */
   text-decoration: underline;
 }
 
