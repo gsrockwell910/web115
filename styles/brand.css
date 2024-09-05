@@ -93,7 +93,7 @@ td[data-color="sec3"] {
 }
 
 /* Selects Fonts and Color Scheme uls */
-body > div:nth-child(3) > main:nth-child(1) > div:nth-child(1) > div:nth-child(2) > ul {
+body > div:nth-child(3) > main:nth-child(1) > div:nth-child(1) > div:nth-child(2) > dl {
   list-style-type: none;
   margin: 0%;
   padding: 0%;
@@ -102,11 +102,11 @@ body > div:nth-child(3) > main:nth-child(1) > div:nth-child(1) > div:nth-child(2
 }
 
 /* fonts used */
-ol {
+dl {
   list-style-type: circle;
 }
 
-ol > li {
+dl > dd {
   margin-bottom: 2%;
 }
 
