@@ -102,10 +102,6 @@ body > div:nth-child(3) > main:nth-child(1) > div:nth-child(1) > div:nth-child(2
 }
 
 /* fonts used */
-dl {
-  list-style-type: circle;
-}
-
 dl > dd {
   margin-bottom: 2%;
 }
