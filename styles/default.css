@@ -201,6 +201,10 @@ footer {
 }
 
 /* Footer link styles */
+footer div a {
+  margin: 3px 0px;
+}
+
 footer div a:first-of-type {
   color: var(--primary-color4); /* Lighter text color */
 }
