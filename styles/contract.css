@@ -4,6 +4,7 @@ main p {
   background-color: var(--primary-color4); /* Darker background color for better contrast */
   box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow for depth */
   max-height: 97%;
+  overflow-y: scroll;
 }
 
 /* Styling for the first link within main p elements */
