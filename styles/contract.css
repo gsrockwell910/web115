@@ -5,6 +5,7 @@ main p {
   box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow for depth */
   max-height: 95%;
   overflow-y: scroll;
+  scrollbar-width: none;
 }
 
 /* Styling for the first link within main p elements */
