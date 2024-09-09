@@ -9,12 +9,12 @@ main p {
 }
 
 /* Styling for the first link within main p elements */
-main p a:first-of-type {
+main p a[data-link="main"]{
   color: var(--secondary-color2); /* More contrasting link color */
 }
 
 /* Hover state for links within main p elements */
-main p a:hover {
+main p a[data-link="main"]:hover {
   color: var(--primary-color3); /* Lighter text color on hover for better visibility */
   text-decoration: underline;
 }
