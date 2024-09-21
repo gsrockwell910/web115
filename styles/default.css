@@ -101,12 +101,16 @@ h1 {
   font-weight: bold;
 }
 
+h2:first-of-type {
+  margin-top: 2%;
+}
+
 h2 {
   margin: 10px 0;
   font-size: 1.5em;
   font-weight: normal;
+  color: var(--primary-color4)
 }
-
 /* Link styles */
 
 /* Default state of links */
@@ -175,6 +179,7 @@ main {
   display: flex;
   justify-content: center; /* Center horizontally */
   align-items: center; /* Center vertically */
+  flex-direction: column;
   flex: 1;
   height: 100vh; /* Full viewport height */
   margin: 0; /* Remove default margin */
