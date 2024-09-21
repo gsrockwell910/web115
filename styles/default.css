@@ -211,7 +211,6 @@ main > p > a:any-link:hover {
 footer {
   background: var(--primary-color1); /* Slightly darker background color */
   text-align: center;
-  padding: 5px 0px;
   margin-top: auto; /* Pushes the footer to the bottom */
   max-width: 100%;
   display: flex;
