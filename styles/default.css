@@ -102,7 +102,8 @@ h1 {
 }
 
 h2:first-of-type {
-  margin-top: 2%;
+  margin-top: 1%;
+  margin-bottom: 0%;
 }
 
 h2 {
@@ -210,7 +211,7 @@ main > p > a:any-link:hover {
 footer {
   background: var(--primary-color1); /* Slightly darker background color */
   text-align: center;
-  padding: 10px;
+  padding: 5px 0px;
   margin-top: auto; /* Pushes the footer to the bottom */
   max-width: 100%;
   display: flex;
@@ -218,19 +219,19 @@ footer {
 }
 
 /* Footer link styles */
-footer div a {
-  margin: 3px 0px;
+footer div {
+  margin-bottom: 10px;
 }
 
-footer div a:first-of-type {
-  color: var(--primary-color4); /* Lighter text color */
+footer > div:nth-child(2) > a {
+  color: var(--primary-color4); 
 }
 
-footer div a:first-of-type:visited {
+body > footer > div:nth-child(2) > a:visited {
   color: var(--secondary-color1); /* Darker color for visited footer links */
 }
 
-footer div:nth-of-type(2) a {
+footer > div:first-of-type > a:any-link{
   color: var(--primary-color4); /* Lighter text color */
   border-left: 2px solid var(--primary-color4); /* More contrasting border color */
   border-right: 2px solid var(--primary-color4); /* More contrasting border color */
@@ -239,6 +240,6 @@ footer div:nth-of-type(2) a {
   max-width: 100%;
 }
 
-footer div:nth-of-type(2) a:visited {
+footer div:first-of-type a:visited {
   color: var(--secondary-color1); /* Darker color for visited links */
 }
