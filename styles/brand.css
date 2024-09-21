@@ -93,7 +93,7 @@ td[data-color="sec3"] {
 }
 
 /* Selects Fonts and Color Scheme uls */
-body > div:nth-child(3) > main:nth-child(1) > div:nth-child(1) > div:nth-child(2) > dl {
+dl {
   list-style-type: none;
   margin: 0%;
   padding: 0%;
