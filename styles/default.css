@@ -188,6 +188,8 @@ main {
 
 main > p {
    overflow-y: scroll;
+   scroll-behavior: smooth;
+   scrollbar-width: none;
 }
 
 p {
