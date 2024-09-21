@@ -195,18 +195,6 @@ p {
   background-color: var(--primary-color4); /* Darker background color for better contrast */
 }
 
-/* Target all main p elements */
-
-/*main p {
-  color: var(--primary-color3); /* Lighter text color for better contrast */
-  /*background-color: var(--primary-color4); /* Darker background color for better contrast */
-  /*box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow for depth */
-  /*max-height: 95%;
-  overflow-y: scroll;
-  scrollbar-width: none;
-}
-
-
 /* Styling for the first link within main p elements */
 main > p > a:any-link {
   color: var(--secondary-color2); /* More contrasting link color */
