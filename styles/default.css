@@ -101,8 +101,9 @@ h1 {
   font-weight: bold;
 }
 
-h2:first {
-  margin: .3em;
+h2:first-of-type {
+  margin-top: 2%;
+  margin-bottom: 0%;
 }
 
 h2 {
