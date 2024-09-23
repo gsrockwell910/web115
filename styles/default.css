@@ -364,23 +364,23 @@ footer div {
   margin-bottom: 10px;
 }
 
-footer > div:nth-child(2) > a {
+footer a {
   color: var(--primary-color4); 
 }
 
-body > footer > div:nth-child(2) > a:visited {
-  color: var(--secondary-color1); /* Darker color for visited footer links */
+footer a:visited {
+  color: var(--secondary-color1);
 }
 
-footer > div:first-of-type > a:any-link{
-  color: var(--primary-color4); /* Lighter text color */
-  border-left: 2px solid var(--primary-color4); /* More contrasting border color */
-  border-right: 2px solid var(--primary-color4); /* More contrasting border color */
+footer > div:first-of-type a {
+  color: var(--primary-color4); 
+  border-left: 2px solid var(--primary-color4); 
+  border-right: 2px solid var(--primary-color4);
   padding: 0px 5px;
   display: inline-block;
   max-width: 100%;
 }
 
-footer div:first-of-type a:visited {
-  color: var(--secondary-color1); /* Darker color for visited links */
+footer > div:first-of-type a:visited {
+  color: var(--secondary-color1);
 }
