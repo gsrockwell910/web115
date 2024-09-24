@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const generateButton = document.getElementById("generate-button");
   const outputSection = document.getElementById("fizzbuzz1-output");
 
-  // Listen for submit event on form
+  // Listen for click event on button
   generateButton.addEventListener("click", function (event) {
     // Prevent default event behaviours
     event.preventDefault(); 
