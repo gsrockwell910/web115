@@ -2,25 +2,39 @@
 document.addEventListener("DOMContentLoaded", function () {
   //Grab all necessary elements
   const generateButton = document.getElementById("generate-button");
-  const outputSection = document.getElementById("output-section");
+  const outputSection = document.getElementById("fizzbuzz1-output");
 
   // Listen for submit event on form
   generateButton.addEventListener("click", function (event) {
     // Prevent default event behaviours
-    event.preventDefault();
-
+    event.preventDefault(); 
+    // Set magic number (140) in const
+    const loopControl = 140;
     // Create element to store output
     const outputElement = document.createElement("p");
-    // Create flag to tell if number is even or odd
-    let isEven;
+    // Create variables for words
+    const firstWord = "Rhino";
+    const secondWord = "Vision";
+    const fullWord = "RhinoVision";
+    // Create variables for numbers
+    const firstDivisor = 3;
+    const secondDivisor = 5;
     // Loop 
-    for (let i = 0; i < loopControl; i++){
-      // Change value of isEven based on current num
-      isEven = (i + 1) % 2 === 0 ? true : false;
-      // Create string
-      let evenOrOdd = isEven ? "even" : "odd";
+    for (let i = 1; i <= loopControl; i++){
+    // Check for both conditions first to avoid incorrect output
+     if (i % firstDivisor === 0 && i % secondDivisor === 0) {
       // Change text conent
-      outputElement.innerHTML += `${i + 1}) Rhino Vision - This number is ${evenOrOdd}.<br>`;
+      outputElement.innerHTML += `${i}) ${fullWord} - This number is divisible by ${firstDivisor} and ${secondDivisor}.<br>`;
+     } else if (i % firstDivisor === 0) {
+      // Change text conent
+      outputElement.innerHTML += `${i}) ${firstWord} - This number is divisible by ${firstDivisor} only.<br>`;
+     } else if  (i % secondDivisor === 0) {
+      // Change text conent
+      outputElement.innerHTML += `${i}) ${secondWord} - This number is divisible by ${secondDivisor} only.<br>`;
+     } else {
+      // Change text conent
+      outputElement.innerHTML += `${i}) This number is not divisible by ${firstDivisor} or ${secondDivisor}.<br>`;
+     }
     }
     //append element
     outputSection.appendChild(outputElement);
