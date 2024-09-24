@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // prompt user to enter a number and store in variable
     const loopControl = prompt(`How high do you want to count, ${firstName}`);
     // Create element to store output
-    outputElement = document.createElement("p");
+    const outputElement = document.createElement("p");
     // Create flag to tell if number is even or odd
     let isEven;
     // Loop 
