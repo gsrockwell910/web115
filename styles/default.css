@@ -227,14 +227,10 @@ section {
   margin: 0%;
 }
 
-main > p {
-  overflow-y: scroll;
-  scrollbar-width: none;
-  scroll-behavior: smooth;
-  max-height: 55vh;
-}
-
-p, section > p:nth-child(1){
+p, 
+#output-section > p, 
+#fizzbuzz1-output > p, 
+#fizzbuzz2-output > p {
   font-size: 1.1em; 
   line-height: 1.4em; 
   color: var(--primary-color3);
@@ -242,6 +238,10 @@ p, section > p:nth-child(1){
   padding: 20px;
   max-width: 55vw; 
   background: var(--primary-color4);
+  overflow-y: scroll;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  max-height: 55vh;
 }
 
 /* Styling for the first link within main p elements */
