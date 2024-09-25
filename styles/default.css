@@ -175,6 +175,7 @@ main {
   scrollbar-width: none;
   flex: 1;
   margin: .5em;
+  justify-content: center;
 }
 
 body > main > section > ul {
@@ -266,7 +267,7 @@ table {
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
- th, td, td[data-color] {
+th, td, td[data-color] {
   border: 1px solid var(--primary-color4);
   text-align: left;
   padding: .4em;
