@@ -230,6 +230,7 @@ section {
   overflow-y: scroll;
   scrollbar-width: none;
   max-height: 80%;
+  margin: .5em;
 }
 
 p {
