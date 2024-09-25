@@ -98,6 +98,12 @@ h1 {
   font-weight: bold;
 }
 
+/* Try to find a way to do this without using ID. 
+Ideal solution doesnt affect brand page h2s, maybe change these to a lower level */
+#greeting {
+  text-align: center;
+}
+
 h2 {
   margin-bottom: 0%;
   font-size: 1.7em;
