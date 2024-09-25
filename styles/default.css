@@ -1,5 +1,4 @@
 /* styles/default.css */
-
 /* Color Scheme */
 :root {
   --primary-color1: #9E9D80;
@@ -45,6 +44,7 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
+  box-sizing: border-box;
   overflow-x: hidden;
   overflow-y: scroll;
   scroll-behavior: smooth;
@@ -55,10 +55,10 @@ html, body {
 /* General body styling */
 body {
   font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: var(--primary-color3); /* Lighter background for better contrast */
-  color: var(--primary-color4); /* Darker text color for higher contrast */
+  margin: 0px;
+  padding: 0px;
+  background-color: var(--primary-color3);
+  color: var(--primary-color4); 
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -85,46 +85,39 @@ em strong{
 
 /* Header styling */
 header {
-  background-color: var(--primary-color1); /* Slightly darker background for better contrast */
-  color: var(--primary-color4); /* Darker text color */
+  background-color: var(--primary-color1);
+  color: var(--primary-color4); 
   text-align: center;
-  padding: 25px 0;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow for better visibility */
+  padding: 30px 0px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
   min-width: 100%;
   display: flex;
   flex-direction: column;
 }
 
 h1 {
-  margin: 0;
+  margin: 0px;
   font-size: 3em;
   font-weight: bold;
 }
 
-h2:first-of-type {
-  margin-top: 2%;
-  margin-bottom: 0%;
-}
-
 h2 {
-  margin-top: 3%;
   margin-bottom: 0%;
   font-size: 1.7em;
   font-weight: normal;
   color: var(--primary-color4)
 }
-/* Link styles */
 
-/* Default state of links */
+/* Link styles */
 a {
-  color: var(--primary-color4); /* Darker link color for better visibility */
-  transition: color 0.3s, text-decoration 0.3s; /* Smooth transition */
+  color: var(--primary-color4);
+  transition: color 0.3s, text-decoration 0.3s;
   text-decoration: none;
 }
 
 /* Hover state of links */
 a:hover {
-  text-decoration: underline; /* Underline on hover */
+  text-decoration: underline; 
 }
 
 /* Visited state of links */
@@ -139,7 +132,7 @@ a:active {
 
 /* Navigation styling */
 nav {
-  background-color: var(--primary-color4); /* Darker background color */
+  background-color: var(--primary-color4); 
   min-width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -147,8 +140,8 @@ nav {
 
 nav ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   text-align: center;
 }
 
@@ -162,29 +155,33 @@ nav ul li a {
   color: var(--primary-color3);
   text-decoration: none;
   font-size: 1.2em;
-  background-color: var(--primary-color4); /* More vibrant background color for nav items  #5B9BD5*/
+  background-color: var(--primary-color4);
   transition: background-color 0.3s, color 0.3s;
 }
 
 nav ul li a:hover {
-  background-color: var(--primary-color2); /* More contrasting hover background color */
-  color: var(--secondary-color3); /* Lighter text color on hover */
+  background-color: var(--primary-color2);
+  color: var(--secondary-color3); 
   text-decoration: underline;
 }
 
 /* Navigation link active state */
 nav ul li a:active {
-  color: var(--primary-color1); /* Darker color when clicked */
+  color: var(--primary-color1);
 }
 
 main {
   display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  justify-content: center; 
+  align-items: center;
   flex-direction: column;
   flex: 1;
-  height: 100vh; /* Full viewport height */
-  margin: 0; /* Remove default margin */
+  height: 100vh;
+  margin: 0;
+}
+
+body > main > section > ul {
+  margin: 0px;
 }
 
 form {
@@ -192,6 +189,7 @@ form {
   flex-direction: column;
   padding: 2em;
   margin-top: 1.2em;
+  margin-bottom: 1.2em;
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
   border-radius: 5%;
   border: 2px solid var(--primary-color4);
@@ -220,61 +218,42 @@ button:hover {
 
 }
 
-main > p {
-  overflow-y: scroll;
-  scroll-behavior: smooth;
-  scrollbar-width: none;
-}
-
 section {
   overflow-y: scroll;
   scrollbar-width: none;
   max-height: 80%;
-  margin: .5em;
+  margin: 0%;
 }
 
-p {
+p, section > p:nth-child(1) {
   font-size: 1.1em; 
   line-height: 1.4em; 
-  color: var(--primary-color3); /* Lighter text color */
+  color: var(--primary-color3);
   border-radius: 10px;
   padding: 20px;
   max-width: 55vw; 
-  background-color: var(--primary-color4); /* Darker background color for better contrast */
+  background: var(--primary-color4);
 }
 
 /* Styling for the first link within main p elements */
 main > p > a:any-link {
-  color: var(--secondary-color2); /* More contrasting link color */
+  color: var(--secondary-color2); 
 }
 
 /* Hover state for links within main p elements */
 main > p > a:any-link:hover {
-  color: var(--primary-color3); /* Lighter text color on hover for better visibility */
+  color: var(--primary-color3); 
   text-decoration: underline;
 }
 
-/* Body Div */
-body > div {
+main > section {
   display: flex;
   flex-direction: column;
   max-width: 75%;
-  align-self: center;
-  justify-self: center;
-}
-
-/* Div inside main */
-main div {
-  display: flex;
-  flex-direction: column;
-}
-
-/* P styles */
-main > div > div p {
-  background: var(--primary-color3);
-  color: var(--primary-color4);
-  padding: 0%;
-  margin: 0% auto;
+  padding: 0px;
+  margin-top: 0%;
+  color: var(--primary-color4); 
+  background-color: var(--primary-color3); 
 }
 
 /* Color Table */
@@ -288,7 +267,6 @@ table {
  th, td, td[data-color] {
   border: 1px solid var(--primary-color4);
   text-align: left;
-  /*min-width: 50%; /* Consider if this should be kept, only works as intended on FireFox without some level of effort, without looks fine. */
   padding: .4em;
 }
 
@@ -297,14 +275,10 @@ th {
   color: var(--primary-color4);
 }
 
-/* Font Ul */
-div > ul:first-of-type > li {
-  margin: 0%;
-}
-
 hr {
   color: var(--primary-color4);
   min-width: 100%;
+  margin-top: 0%;
   margin-bottom: 3%;
 }
 
@@ -357,15 +331,17 @@ dl > dd {
 }
 
 /* Image styling */
-div > img {
- max-width: 25%;
- margin: 3% auto 2% auto;
+body > main > section > img {
+  max-width: 25%;
+  margin: 2% auto;
 }
 
 /* Styling for images */
-figure > img {
+section > figure > img {
   border-radius: 10px;
-  box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow for better depth */
+  display: block;
+  margin: .5rem auto;
+  box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.2);
 }
 
 /* Styling for figure captions */
@@ -375,35 +351,33 @@ figcaption {
 }
 
 /* Paragraph styling */
-main > div p {
-  margin: 1% 0%;
+main > section p {
   padding: 0px;
   background: none;
   color: var(--primary-color4); 
   background-color: var(--primary-color3); 
+  margin: .2em 0em;
+  align-self: center;
 }
 
 /* Ordered list styling */
 ol {
   list-style-type: upper-roman;
-  color: var(--primary-color4); /* Darker text color to match the new color scheme */
+  color: var(--primary-color4);
 }
 
 /* Footer styling */
 footer {
-  background: var(--primary-color1); /* Slightly darker background color */
+  background: var(--primary-color1);
   text-align: center;
-  margin-top: auto; /* Pushes the footer to the bottom */
+  margin-top: auto;
+  padding: .4rem 0px;
   max-width: 100%;
   display: flex;
   flex-direction: column;
 }
 
 /* Footer link styles */
-footer div {
-  margin-bottom: 10px;
-}
-
 footer a {
   color: var(--primary-color4); 
 }
@@ -412,15 +386,27 @@ footer a:visited {
   color: var(--secondary-color1);
 }
 
-footer > div:first-of-type a {
+body > footer > section > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer > section:first-of-type a {
   color: var(--primary-color4); 
   border-left: 2px solid var(--primary-color4); 
   border-right: 2px solid var(--primary-color4);
   padding: 0px 5px;
+  margin: 0px 5px;
   display: inline-block;
   max-width: 100%;
 }
 
-footer > div:first-of-type a:visited {
+footer > section > span {
+  display: block;
+  padding: .4rem 0px;
+}
+
+footer > section:first-of-type a:visited {
   color: var(--secondary-color1);
 }
