@@ -43,13 +43,11 @@
 html, body {
   margin: 0;
   padding: 0;
-  height: 100%;
   box-sizing: border-box;
-  overflow-x: hidden;
   overflow-y: scroll;
   scroll-behavior: smooth;
   scrollbar-width: none;
-  box-sizing: border-box;
+  min-height: 100vh;
 }
 
 /* General body styling */
@@ -61,7 +59,6 @@ body {
   color: var(--primary-color4); 
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
 }
 
 strong {
@@ -105,7 +102,7 @@ h2 {
   margin-bottom: 0%;
   font-size: 1.7em;
   font-weight: normal;
-  color: var(--primary-color4)
+  color: var(--primary-color4);
 }
 
 /* Link styles */
@@ -172,16 +169,17 @@ nav ul li a:active {
 
 main {
   display: flex;
-  justify-content: center; 
   align-items: center;
   flex-direction: column;
+  overflow-y: scroll;
+  scrollbar-width: none;
   flex: 1;
-  height: 100vh;
-  margin: 0;
+  margin: .5em;
 }
 
 body > main > section > ul {
   margin: 0px;
+  align-self: center;
 }
 
 form {
@@ -215,17 +213,21 @@ button {
 button:hover {
   background-color: var(--primary-color3);
   color: var(--primary-color4);
-
 }
 
 section {
-  overflow-y: scroll;
-  scrollbar-width: none;
-  max-height: 80%;
+  min-width: 75%;
   margin: 0%;
 }
 
-p, section > p:nth-child(1) {
+main > p {
+  overflow-y: scroll;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  max-height: 55vh;
+}
+
+p, section > p:nth-child(1){
   font-size: 1.1em; 
   line-height: 1.4em; 
   color: var(--primary-color3);
@@ -337,9 +339,10 @@ body > main > section > img {
 }
 
 /* Styling for images */
-section > figure > img {
+body > main > section > figure > img {
   border-radius: 10px;
-  display: block;
+  max-width: 100%;
+  display: flex;
   margin: .5rem auto;
   box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.2);
 }
@@ -369,7 +372,6 @@ ol {
 /* Footer styling */
 footer {
   background: var(--primary-color1);
-  text-align: center;
   margin-top: auto;
   padding: .4rem 0px;
   max-width: 100%;
@@ -388,8 +390,9 @@ footer a:visited {
 
 body > footer > section > span {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  padding: .4rem 0px;
 }
 
 footer > section:first-of-type a {
@@ -398,13 +401,8 @@ footer > section:first-of-type a {
   border-right: 2px solid var(--primary-color4);
   padding: 0px 5px;
   margin: 0px 5px;
-  display: inline-block;
+  display: flex;
   max-width: 100%;
-}
-
-footer > section > span {
-  display: block;
-  padding: .4rem 0px;
 }
 
 footer > section:first-of-type a:visited {
