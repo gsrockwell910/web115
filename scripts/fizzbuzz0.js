@@ -15,9 +15,9 @@ document.addEventListener("DOMContentLoaded", function () {
     // Grab field inputs and store in variables, all fields will be present 
     // due to fields being required in HTML, should validate to ensure only 
     // proper input will be processed (TODO).
-    let firstName = firstNameField.value;
-    let lastName = lastNameField.value;
-    let middleInitial = middleInitialField.value; 
+    let firstName = firstNameField.value.trim();
+    let lastName = lastNameField.value.trim();
+    let middleInitial = middleInitialField.value.trim(); 
     // Store formatted full name in variable
     const fullName = firstName + " " + middleInitial + ". " + lastName;
     // Update greeting with custom greeting that uses full name 
