@@ -241,7 +241,11 @@ p,
   overflow-y: scroll;
   scrollbar-width: none;
   scroll-behavior: smooth;
-  max-height: 55vh;
+  max-height: 60vh;
+}
+
+li > p {
+   max-height: 100vh;
 }
 
 /* Styling for the first link within main p elements */
