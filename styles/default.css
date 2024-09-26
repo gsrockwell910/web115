@@ -227,27 +227,6 @@ section {
   margin: 0%;
 }
 
-p, 
-#output-section > p, 
-#fizzbuzz1-output > p, 
-#fizzbuzz2-output > p {
-  font-size: 1.1em; 
-  line-height: 1.4em; 
-  color: var(--primary-color3);
-  border-radius: 10px;
-  padding: 20px;
-  max-width: 55vw; 
-  background: var(--primary-color4);
-  overflow-y: scroll;
-  scrollbar-width: none;
-  scroll-behavior: smooth;
-  max-height: 60vh;
-}
-
-li > p {
-   max-height: 100vh;
-}
-
 /* Styling for the first link within main p elements */
 main > p > a:any-link {
   color: var(--secondary-color2); 
@@ -365,7 +344,25 @@ figcaption {
 }
 
 /* Paragraph styling */
-main > section p {
+p, 
+#output-section > p, 
+#fizzbuzz1-output > p, 
+#fizzbuzz2-output > p {
+  font-size: 1.1em; 
+  line-height: 1.4em; 
+  color: var(--primary-color3);
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 55vw; 
+  background: var(--primary-color4);
+  overflow-y: scroll;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  max-height: 60vh;
+}
+
+li > p, section > p {
+  max-height: 100vh;
   padding: 0px;
   background: none;
   color: var(--primary-color4); 
