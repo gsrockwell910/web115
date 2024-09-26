@@ -1,24 +1,12 @@
 <!DOCTYPE html>
+<html lang = "en">
 <!-- Todo: .Refactor CSS to use ems/rems for spacing etc
            .create new components where possible
            .consider incorporating bootstrap/css framework for uniform site appearance/ease of coding.
             -->
-<html lang = "en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>RhinoVision Software | Home</title>
-    <link rel="stylesheet" type="text/css" href="styles/default.css">
-    <link rel="shortcut icon" type="x-icon" href="images/rhino_icon.png?">
-    <script src="https://lint.page/kit/67ff88.js" crossorigin="anonymous"></script>
-</head>
-
+<div data-include="components/head.html" data-replace="%pageTitle%: Home"></div>
 <body>
-
-  <div data-include="components/header.html">
-  </div>
-  
+  <div data-include="components/header.html"></div>
     <main>
       <h2>Welcome!</h2>
 
@@ -42,10 +30,7 @@
         more about me. Happy coding to everyone and I hope we all
         have a great semester!</p>
     </main>
-
-    <div data-include="components/footer.html">
-    </div>
-
+    <div data-include="components/footer.html"></div>
     <script src="scripts/HTMLInclude.js"></script>
 </body>
 </html>
