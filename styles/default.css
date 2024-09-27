@@ -178,6 +178,11 @@ li > button:active {
   color: var(--primary-color1);
 }
 
+li > button:after {
+  background-color: var(--primary-color4);
+  color: var(--primary-color3);
+}
+
 nav > ul > li:last-of-type  {
   display: inline-block;
   max-width: 100%;
