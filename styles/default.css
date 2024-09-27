@@ -198,8 +198,7 @@ body > nav > ul > li > ul:nth-child(2) > li > a{
   display: flex;
   background-color: var(--primary-color2);
   color: var(--secondary-color3);
-  padding: 15px 19px;
-  min-width: 81%;
+  width: 66%;
 } 
 
 body > nav > ul > li > ul:nth-child(2) > li > a {
