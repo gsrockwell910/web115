@@ -11,12 +11,12 @@ let toggled = false;
 function toggleMenu() {
   // If state was not toggled
   if (toggled === false) {
-      // Toggle it
-      toggled = true; 
-      // add show class to make list visible
-      dropdownUL.classList.add("show");
-      // Change text
-      dropdownButton.textContent = toggledText;
+    // Toggle it
+    toggled = true; 
+    // add show class to make list visible
+    dropdownUL.classList.add("show");
+    // Change text
+    dropdownButton.textContent = toggledText;
     // State is toggled
   } else {
     // Untoggle it
