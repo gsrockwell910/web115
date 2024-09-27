@@ -42,19 +42,4 @@ function toggleMenu() {
       }
     }
   };
-// For mobile devices
-  window.ontouchstart = function (event) {
-    // If the target of the click is not the dropdown button
-    if (!event.target.matches(".dropdownButton")) {
-      // If the dropdown UL current has the class of show
-      if (dropdownUL.classList.contains("show")) {
-        // Untoggle
-        toggled = false;
-        // Remove class
-        dropdownUL.classList.remove("show");
-        // Change text
-        dropdownButton.textContent = untoggledText;
-      }
-    }
-  };
 }
