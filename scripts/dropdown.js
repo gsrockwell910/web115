@@ -2,32 +2,44 @@
 // Grab dropdown ul, dropdown button
 const dropdownUL = document.getElementById("dropdown");
 const dropdownButton = document.querySelector(".dropdownButton");
+// Text vars
+const toggledText = "⤴ FizzBuzz";
+const untoggledText = "⤵ FizzBuzz";
 // Flag
 let toggled = false;
 // Toggle class
 function toggleMenu() {
+  // If state was not toggled
   if (toggled === false) {
-      toggled = true;
-      dropdownButton.textContent = "FizzBuzz↑";
+      // Toggle it
+      toggled = true; 
       // add show class to make list visible
       dropdownUL.classList.add("show");
+      // Change text
+      dropdownButton.textContent = toggledText;
+    // State is toggled
   } else {
+    // Untoggle it
     toggled = false;
-    dropdownButton.textContent = "FizzBuzz↓";
+    // Remove class
     dropdownUL.classList.remove("show");
+    // Change text
+    dropdownButton.textContent = untoggledText;
   }
 
-// Close menu is user clicks off 
-window.onclick = function(e) {
-  // If the target of the click is not the dropdown button
-  if (!e.target.matches(".dropdownButton")) {
-    // If the dropdown UL current has the class of show
-    if (dropdownUL.classList.contains("show")) {
-      // Remove it
-      toggled = false;
-      dropdownUL.classList.remove("show");
-      dropdownButton.textContent = "FizzBuzz↓";
+  // Close menu is user clicks off 
+  window.onclick = function(e) {
+    // If the target of the click is not the dropdown button
+    if (!e.target.matches(".dropdownButton")) {
+      // If the dropdown UL current has the class of show
+      if (dropdownUL.classList.contains("show")) {
+        // Untoggle
+        toggled = false;
+        // Remove class
+        dropdownUL.classList.remove("show");
+        // Change text
+        dropdownButton.textContent = untoggledText;
+      }
     }
-  }
-};
+  };
 }

@@ -1,3 +1,4 @@
+"use strict";
 //Listen for DOM to load
 document.addEventListener("DOMContentLoaded", function () {
   //Grab all necessary elements
