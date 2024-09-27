@@ -29,6 +29,8 @@ function toggleMenu() {
 
   // Close menu is user clicks off 
   window.onclick = function(e) {
+    // Prevent default should help with mobile
+    e.preventDefault();
     // If the target of the click is not the dropdown button
     if (!e.target.matches(".dropdownButton")) {
       // If the dropdown UL current has the class of show
