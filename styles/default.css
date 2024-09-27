@@ -180,14 +180,12 @@ li > button:active {
 
 nav > ul > li:last-of-type  {
   display: inline-block;
-  max-width: 100%;
 }
 
 nav li > ul {
   display: none;
   position: absolute;
   z-index: 1;
-  border: 1px solid var(--primary-color4);
 }
 
 .show {
@@ -201,7 +199,21 @@ body > nav > ul > li > ul:nth-child(2) > li > a{
   background-color: var(--primary-color2);
   color: var(--secondary-color3);
   padding: 15px 19px;
+  min-width: 81%;
 } 
+
+body > nav > ul > li > ul:nth-child(2) > li > a {
+  border-left: 1px solid var(--primary-color4);
+  border-right: 1px solid var(--primary-color4);
+}
+
+body > nav > ul > li > ul:nth-child(2) > li:last-child > a {
+  border-bottom: 1px solid var(--primary-color4);
+}
+
+body > nav > ul > li > ul:nth-child(2) > li:first-child > a {
+  border-top: 1px solid var(--primary-color4);
+}
 
 main {
   display: flex;
