@@ -43,7 +43,7 @@ function toggleMenu() {
     }
   };
 
-  // Close menu on mobile 
+  // Close menu on mobile if user touches any part of the window that is not the dropdown menu or dd menu links
   window.ontouchend = function(event) {
     // If the target of the click is not the dropdown button, 
     // extra condition checks if object being touched is a dropdown link. 
