@@ -152,8 +152,11 @@ nav ul li {
   display: inline;
 }
 
-nav ul li a {
+nav ul li a,
+li > button {
   display: inline-block;
+  margin: 0;
+  border: none;
   padding: 15px 25px;
   color: var(--primary-color3);
   text-decoration: none;
@@ -162,16 +165,43 @@ nav ul li a {
   transition: background-color 0.3s, color 0.3s;
 }
 
-nav ul li a:hover {
+nav ul li a:hover,
+li > button:hover {
   background-color: var(--primary-color2);
   color: var(--secondary-color3); 
   text-decoration: underline;
 }
 
 /* Navigation link active state */
-nav ul li a:active {
+nav ul li a:active,
+li > button:active {
   color: var(--primary-color1);
 }
+
+nav > ul > li:last-of-type  {
+  display: inline-block;
+  max-width: 100%;
+}
+
+nav li > ul {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  border: 1px solid var(--primary-color4);
+}
+
+.show {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+}
+
+body > nav > ul > li > ul:nth-child(2) > li > a{
+  display: flex;
+  background-color: var(--primary-color2);
+  color: var(--secondary-color3);
+  padding: 15px 19px;
+} 
 
 main {
   display: flex;
