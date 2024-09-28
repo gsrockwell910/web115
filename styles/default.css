@@ -189,8 +189,7 @@ nav li > ul {
 }
 
 .show {
-  display: flex;
-  flex-direction: column;
+  display: block;
   padding: 0px;
 }
 
@@ -198,7 +197,7 @@ body > nav > ul > li > ul:nth-child(2) > li > a{
   display: flex;
   background-color: var(--primary-color2);
   color: var(--secondary-color3);
-  width: 66%;
+  width: 65.7%;
 } 
 
 body > nav > ul > li > ul:nth-child(2) > li > a {
@@ -261,12 +260,6 @@ button {
 button:hover {
   background-color: var(--primary-color3);
   color: var(--primary-color4);
-}
-
-@media (hover: hover) {
-  button:hover {
-      background-color: blue;
-  }
 }
 
 section {
