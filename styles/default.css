@@ -263,6 +263,12 @@ button:hover {
   color: var(--primary-color4);
 }
 
+@media (hover: hover) {
+  button:hover {
+      background-color: blue;
+  }
+}
+
 section {
   min-width: 75%;
   margin: 0%;
