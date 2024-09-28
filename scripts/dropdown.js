@@ -5,9 +5,10 @@ const dropdownButton = document.querySelector(".dropdownButton");
 // Text vars
 const toggledText = "⤴ FizzBuzz";
 const untoggledText = "⤵ FizzBuzz";
-// Color vars 
+// Color/style vars (for mobile)
 const backgroundColor = "#1F2A38";
 const textColor = "#F8F4F1";
+const dropdownUnderline = "none";
 // Flag
 let toggled = false;
 // Toggle class
@@ -48,9 +49,10 @@ function toggleMenu() {
 
   // Close menu on mobile if user touches any part of the window that is not the dropdown menu or dd menu links
   window.ontouchend = function(event) {
-    // Change color of dropdown button when clicked (for mobile hover effect)
+    // Change styles of dropdown button when clicked (for mobile hover effect/Sticky hover)
     dropdownButton.style.backgroundColor = backgroundColor;
     dropdownButton.style.color = textColor;
+    dropdownButton.style.textDecoration = dropdownUnderline;
     // If the target of the click is not the dropdown button, 
     // extra condition checks if object being touched is a dropdown link. 
     // without this links will not open in mobile view.
