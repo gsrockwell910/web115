@@ -30,7 +30,8 @@ function toggleMenu() {
   // Close menu if user clicks off 
   window.onclick = function(event) {
     // If the target of the click is not the dropdown button and the dropdown ul classlist contains show
-    if (!event.target.matches(".dropdownButton") && dropdownUL.classList.contains("show")) {
+    if (!event.target.matches(".dropdownButton") && 
+        dropdownUL.classList.contains("show")) {
         // Untoggle
         toggled = false;
         // Remove class
@@ -45,7 +46,9 @@ function toggleMenu() {
     // If the target of the click is not the dropdown button, 
     // extra condition checks if object being touched is a dropdown link. 
     // without this links will not open in mobile view.
-    if (!event.target.matches(".dropdownButton") && !event.target.matches(".dropdown-link") && dropdownUL.classList.contains("show")) {
+    if (!event.target.matches(".dropdownButton") && 
+        !event.target.matches(".dropdown-link") && 
+        dropdownUL.classList.contains("show")) {
       // Untoggle
       toggled = false;
       // Remove class
