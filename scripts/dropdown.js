@@ -5,6 +5,8 @@ const dropdownButton = document.querySelector(".dropdownButton");
 // Text vars
 const toggledText = "⤴ FizzBuzz";
 const untoggledText = "⤵ FizzBuzz";
+// Change color of dropdown button when clicked (for mobile hover effect)
+dropdownButton.style.backgroundColor = "#1F2A38";
 // Flag
 let toggled = false;
 // Toggle class
