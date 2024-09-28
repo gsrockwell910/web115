@@ -190,6 +190,7 @@ nav li > ul {
 
 .show {
   display: block;
+  float: left;
   padding: 0px;
 }
 
@@ -197,7 +198,7 @@ body > nav > ul > li > ul:nth-child(2) > li > a{
   display: flex;
   background-color: var(--primary-color2);
   color: var(--secondary-color3);
-  width: 65.7%;
+  width: 65.6%;
 } 
 
 body > nav > ul > li > ul:nth-child(2) > li > a {
