@@ -4,7 +4,12 @@
            .create new components where possible
            .consider incorporating bootstrap/css framework for uniform site appearance/ease of coding.
             -->
-<div data-include="components/head.html" data-replace="%pageTitle%: Home"></div>
+<head>
+  <noscript data-include="components/head.html" data-replace="%pageTitle%: Home"></noscript>
+  <!-- Default title, no title tag (or title tag only in head.html) causes error in accumulus. 
+   Shortened  to show that HTMLInclude variable is working-->
+  <title>RhinoVision Software</title>
+</head>
 <body>
   <div data-include="components/header.html"></div>
     <main>
