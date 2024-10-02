@@ -45,8 +45,8 @@ function toggleMenu() {
     // If the target of the click is the dropdown button, 
     // extra condition checks if object being touched is a dropdown link. 
     // without this links will not open in mobile view.
-    if (event.target.matches(".dropdownButton") && 
-        event.target.matches(".dropdown-link") &&
+    if (!event.target.matches(".dropdownButton") && 
+        !event.target.matches(".dropdown-link") &&
         dropdownUL.classList.contains("show")) return;
     // Untoggle
     isToggled = false;
