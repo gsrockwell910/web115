@@ -30,7 +30,7 @@ function toggleMenu() {
   // Close menu if user clicks off 
   window.onclick = function(event) {
     // If the target of the click is the dropdown button and the dropdown ul classlist contains show - return (do nothing)
-    // Doing this removes another layer of nesting
+    // Doing this removes another layer of nesting (IOC).
     if (event.target.matches(".dropdownButton") && dropdownUL.classList.contains("show")) return;
     // Untoggle
     isToggled = false;
