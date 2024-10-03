@@ -2,17 +2,18 @@
 //Listen for DOM to load
 document.addEventListener("DOMContentLoaded", function () {
   //Grab all necessary elements
-  const greeting = document.getElementById("greeting");
   const form = document.getElementById("fizzbuzz-form");
-  const firstNameField = document.getElementById("first-name");
-  const lastNameField = document.getElementById("last-name");
-  const middleInitialField = document.getElementById("middle-initial");
-  const outputSection = document.getElementById("output-section");
 
   // Listen for submit event on form
   form.addEventListener("submit", function (event) {
     // Prevent default event behaviours
     event.preventDefault();
+    // Grab necessary elements
+    const firstNameField = document.getElementById("first-name");
+    const lastNameField = document.getElementById("last-name");
+    const middleInitialField = document.getElementById("middle-initial");
+    const outputSection = document.getElementById("output-section");
+    const greeting = document.getElementById("greeting");
     // Grab field inputs and store in variables, all fields will be present 
     // due to fields being required in HTML, should validate to ensure only 
     // proper input will be processed (TODO).
@@ -24,19 +25,24 @@ document.addEventListener("DOMContentLoaded", function () {
     // Update greeting with custom greeting that uses full name 
     greeting.textContent = `Hello, ${fullName}, Welcome to RhinoVision Software!`;
     // prompt user to enter a number and store in variable
-    const loopControl = prompt(`How high do you want to count, ${firstName}`);
+    const loopControl = parseInt(prompt(`How high do you want to count, ${firstName}`));
+    // Strings to prepend to outputElement if i is less than 3 digits
+    const oneDigitPrepend = "00";
+    const twoDigitPrepend = "0";
     // Create element to store output
     const outputElement = document.createElement("p");
     // Create flag to tell if number is even or odd
     let isEven;
     // Loop 
-    for (let i = 0; i < loopControl; i++){
+    for (let i = 1; i <= loopControl; i++){
+      // Prepend 2 zeros if number is 1 digit, 1 zero if num is 2 digits
+      (i <= 9) ? outputElement.innerHTML += oneDigitPrepend : (i > 9 && i <= 99) ? outputElement.innerHTML += twoDigitPrepend : "";
       // Change value of isEven based on current num
-      isEven = (i + 1) % 2 === 0 ? true : false;
+      isEven = (i) % 2 === 0 ? true : false;
       // Create string
       let evenOrOdd = isEven ? "even" : "odd";
       // Change text conent
-      outputElement.innerHTML += `${i + 1}) Rhino Vision - This number is ${evenOrOdd}.<br>`;
+      outputElement.innerHTML += `${i}) Rhino Vision - This number is ${evenOrOdd}.<br>`;
     }
     //append element
     outputSection.appendChild(outputElement);
