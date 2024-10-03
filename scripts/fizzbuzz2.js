@@ -29,10 +29,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     // Loop 
     for (let i = 1; i <= loopControl; i++){
-     // Prepend 2 zeros if number is 1 digit
-     if (i <= 9) outputElement.innerHTML += "00";
-     // Prepend 1 zero if number is 2 digits
-     if (i > 9 && i <= 99) outputElement.innerHTML += "0";
+     // Prepend 2 zeros if number is 1 digit, 1 zero if num is 2 digits
+     (i <= 9) ? outputElement.innerHTML += "00" : (i > 9 && i <= 99) ? outputElement.innerHTML += "0" : "";
      // Check for both conditions first to avoid incorrect output, use new function
      if (checkDivision(i, firstDivisor) && checkDivision(i, secondDivisor)) {
       // Change text conent

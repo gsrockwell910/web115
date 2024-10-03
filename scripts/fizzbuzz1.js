@@ -22,10 +22,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const secondDivisor = 5;
     // Loop 
     for (let i = 1; i <= loopControl; i++){
-     // Prepend 2 zeros if number is 1 digit
-     if (i <= 9) outputElement.innerHTML += "00";
-     // Prepend 1 zero if number is 2 digits
-     if (i > 9 && i <= 99) outputElement.innerHTML += "0";
+     // Prepend 2 zeros if number is 1 digit, 1 zero if num is 2 digits
+     // Chained ternary statements used
+     (i <= 9) ? outputElement.innerHTML += "00" : (i > 9 && i <= 99) ? outputElement.innerHTML += "0" : "";
      // Check for both conditions first to avoid incorrect output
      if (i % firstDivisor === 0 && i % secondDivisor === 0) {
       // Change text conent
