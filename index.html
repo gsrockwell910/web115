@@ -5,6 +5,8 @@
            .consider incorporating bootstrap/css framework for uniform site appearance/ease of coding.
             -->
 <head>
+  <!-- Including stylesheet link here prevents strange loading behaviour associated with head data being store in a component -->
+  <link rel="stylesheet" type="text/css" href="styles/default.css">
   <noscript data-include="components/head.html" data-replace="%pageTitle%: Home"></noscript>
   <!-- Default title, no title tag (or title tag only in head.html) causes error in accumulus. 
    Shortened  to show that HTMLInclude variable is working. Below noscript so this title only loads
