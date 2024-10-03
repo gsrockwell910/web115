@@ -17,6 +17,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const firstWord = "Rhino";
     const secondWord = "Vision";
     const fullWord = "RhinoVision";
+    // Strings to prepend to outputElement if i is less than 3 digits
+    const oneDigitPrepend = "00";
+    const twoDigitPrepend = "0";
     // Create variables for numbers
     const firstDivisor = 4;
     const secondDivisor = 6;
@@ -30,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Loop 
     for (let i = 1; i <= loopControl; i++){
      // Prepend 2 zeros if number is 1 digit, 1 zero if num is 2 digits
-     (i <= 9) ? outputElement.innerHTML += "00" : (i > 9 && i <= 99) ? outputElement.innerHTML += "0" : "";
+     (i <= 9) ? outputElement.innerHTML += oneDigitPrepend : (i > 9 && i <= 99) ? outputElement.innerHTML += twoDigitPrepend : "";
      // Check for both conditions first to avoid incorrect output, use new function
      if (checkDivision(i, firstDivisor) && checkDivision(i, secondDivisor)) {
       // Change text conent
