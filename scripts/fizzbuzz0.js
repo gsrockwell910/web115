@@ -44,7 +44,9 @@ document.addEventListener("DOMContentLoaded", function () {
       // Change text conent
       outputElement.innerHTML += `${i}) Rhino Vision - This number is ${evenOrOdd}.<br>`;
     }
-    //append element
+    // Clear output if there is any
+    outputSection.innerHTML = "";
+    // Append element
     outputSection.appendChild(outputElement);
   });
 });
