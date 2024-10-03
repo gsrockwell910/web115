@@ -37,6 +37,8 @@ document.addEventListener("DOMContentLoaded", function () {
       outputElement.innerHTML += `${i}) This number is not divisible by ${firstDivisor} or ${secondDivisor}.<br>`;
      }
     }
+    // Clear output if there is any
+    outputSection.innerHTML = "";
     //append element
     outputSection.appendChild(outputElement);
   });
