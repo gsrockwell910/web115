@@ -388,7 +388,8 @@ figcaption {
 p, 
 #output-section > p, 
 #fizzbuzz1-output > p, 
-#fizzbuzz2-output > p {
+#fizzbuzz2-output > p,
+#fizzbuzz3-output > p{
   font-size: 1.1em; 
   font-variant-numeric: tabular-nums;
   line-height: 1.4em; 
