@@ -16,13 +16,15 @@ document.addEventListener("DOMContentLoaded", function () {
     // Create variables for words
     const firstWord = "Rhino";
     const secondWord = "Vision";
+    const thirdWord = "BANG!";
     const fullWord = "RhinoVision";
     // Strings to prepend to outputElement if i is less than 3 digits
     const oneDigitPrepend = "00";
     const twoDigitPrepend = "0";
     // Create variables for numbers
-    const firstDivisor = 4;
-    const secondDivisor = 6;
+    const firstDivisor = 3;
+    const secondDivisor = 5;
+    const thirdDivisor = 7
     // Declare function (checkDivision)
     function checkDivision(dividend, divisor) {
       // Flag
@@ -35,15 +37,18 @@ document.addEventListener("DOMContentLoaded", function () {
      // Prepend 2 zeros if number is 1 digit, 1 zero if num is 2 digits
      (i <= 9) ? outputElement.innerHTML += oneDigitPrepend : (i > 9 && i <= 99) ? outputElement.innerHTML += twoDigitPrepend : "";
      // Check for both conditions first to avoid incorrect output, use new function
-     if (checkDivision(i, firstDivisor) && checkDivision(i, secondDivisor)) {
+     if (checkDivision(i, firstDivisor) && checkDivision(i, secondDivisor) && checkDivision(i, thirdDivisor)) {
       // Change text conent
-      outputElement.innerHTML += `${i}) ${fullWord} - This number is divisible by ${firstDivisor} and ${secondDivisor}.<br>`;
+      outputElement.innerHTML += `${i}) ${fullWord} ${thirdWord} - This number is divisible by ${firstDivisor} and ${secondDivisor} AND ${thirdDivisor}.<br>`;
      } else if (checkDivision(i, firstDivisor)) {
       // Change text conent
       outputElement.innerHTML += `${i}) ${firstWord} - This number is divisible by ${firstDivisor} only.<br>`;
-     } else if  (checkDivision(i, secondDivisor)) {
+     } else if (checkDivision(i, secondDivisor)) {
       // Change text conent
       outputElement.innerHTML += `${i}) ${secondWord} - This number is divisible by ${secondDivisor} only.<br>`;
+     } else if (checkDivision(i, thirdDivisor)) {
+      // Change text conent
+      outputElement.innerHTML += `${i}) ${thirdWord} - This number is divisible by ${thirdDivisor} only.<br>`;
      } else {
       // Change text conent
       outputElement.innerHTML += `${i}) This number is not divisible by ${firstDivisor} or ${secondDivisor}.<br>`;
