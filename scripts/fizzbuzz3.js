@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
      } else if (checkDivision(i, firstDivisor) && checkDivision(i, thirdDivisor)) {
       // Change text conent
       outputElement.innerHTML += `${i}) ${firstWord} ${thirdWord} - This number is divisible by ${firstDivisor} and ${thirdDivisor}.<br>`;
-     }  else if (checkDivision(i, secondDivisor) && checkDivision(i, thirdDivisor)) {
+     } else if (checkDivision(i, secondDivisor) && checkDivision(i, thirdDivisor)) {
       // Change text conent
       outputElement.innerHTML += `${i}) ${secondWord} ${thirdWord} - This number is divisible by ${secondDivisor} and ${thirdDivisor}.<br>`;
      } else if (checkDivision(i, firstDivisor)) {
