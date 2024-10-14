@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Create variables for numbers
     const firstDivisor = 3;
     const secondDivisor = 5;
-    const thirdDivisor = 7
+    const thirdDivisor = 7;
     // Declare function (checkDivision)
     function checkDivision(dividend, divisor) {
       // Flag
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
      // Check for both conditions first to avoid incorrect output, use new function
      if (checkDivision(i, firstDivisor) && checkDivision(i, secondDivisor) && checkDivision(i, thirdDivisor)) {
       // Change text conent
-      outputElement.innerHTML += `${i}) ${fullWord} ${thirdWord} - This number is divisible by ${firstDivisor} and ${secondDivisor} AND ${thirdDivisor}.<br>`;
+      outputElement.innerHTML += `${i}) ${fullWord} ${thirdWord} - This number is divisible by ${firstDivisor}, ${secondDivisor}, and ${thirdDivisor}.<br>`;
      } else if (checkDivision(i, firstDivisor)) {
       // Change text conent
       outputElement.innerHTML += `${i}) ${firstWord} - This number is divisible by ${firstDivisor} only.<br>`;
