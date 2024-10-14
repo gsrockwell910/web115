@@ -40,6 +40,15 @@ document.addEventListener("DOMContentLoaded", function () {
      if (checkDivision(i, firstDivisor) && checkDivision(i, secondDivisor) && checkDivision(i, thirdDivisor)) {
       // Change text conent
       outputElement.innerHTML += `${i}) ${fullWord} ${thirdWord} - This number is divisible by ${firstDivisor}, ${secondDivisor}, and ${thirdDivisor}.<br>`;
+     } else if (checkDivision(i, firstDivisor) && checkDivision(i, secondDivisor)) {
+      // Change text conent
+      outputElement.innerHTML += `${i}) ${fullWord} - This number is divisible by ${firstDivisor} and ${secondDivisor}.<br>`;
+     } else if (checkDivision(i, firstDivisor) && checkDivision(i, thirdDivisor)) {
+      // Change text conent
+      outputElement.innerHTML += `${i}) ${firstWord} ${thirdWord} - This number is divisible by ${firstDivisor} and ${thirdDivisor}.<br>`;
+     }  else if (checkDivision(i, secondDivisor) && checkDivision(i, thirdDivisor)) {
+      // Change text conent
+      outputElement.innerHTML += `${i}) ${secondWord} ${thirdWord} - This number is divisible by ${secondDivisor} and ${thirdDivisor}.<br>`;
      } else if (checkDivision(i, firstDivisor)) {
       // Change text conent
       outputElement.innerHTML += `${i}) ${firstWord} - This number is divisible by ${firstDivisor} only.<br>`;
@@ -51,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
       outputElement.innerHTML += `${i}) ${thirdWord} - This number is divisible by ${thirdDivisor} only.<br>`;
      } else {
       // Change text conent
-      outputElement.innerHTML += `${i}) This number is not divisible by ${firstDivisor} or ${secondDivisor}.<br>`;
+      outputElement.innerHTML += `${i}) This number is not divisible by ${firstDivisor}, ${secondDivisor}, or ${thirdDivisor}.<br>`;
      }
     }
     // Clear output if there is any
