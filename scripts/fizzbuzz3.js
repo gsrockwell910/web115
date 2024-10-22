@@ -14,18 +14,10 @@ document.addEventListener("DOMContentLoaded", function () {
     let iterator = 1;
     // Create element to store output
     const outputElement = document.createElement("p");
-    // Create variables for words
-    // const firstWord = "Rhino";
-    // const secondWord = "Vision";
-    // const thirdWord = "BANG!";
-    // const fullWord = "RhinoVision";
     // Strings to prepend to outputElement if i is less than 3 digits
     const oneDigitPrepend = "00";
     const twoDigitPrepend = "0";
-    // Create variables for numbers
-    // const firstDivisor = 3;
-    // const secondDivisor = 5;
-    // const thirdDivisor = 7;
+    // create map and add key value pairs
     const divisorMap = new Map();
     divisorMap.set(3, "Rhino");
     divisorMap.set(5, "Vision");
