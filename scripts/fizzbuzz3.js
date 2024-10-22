@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
       iterator++;
     } while (iterator <= loopControl);
     // Clear output if there is any
-    outputSection.innerHTML = "";
+    outputSection.innerText = "";
     //append element
     outputSection.appendChild(outputElement);
   });
