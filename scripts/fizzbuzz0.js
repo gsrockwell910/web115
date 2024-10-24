@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Loop 
     for (let i = 1; i <= loopControl; i++){
       // Prepend 2 zeros if number is 1 digit, 1 zero if num is 2 digits
-      (i <= 9) ? outputElement.innerHTML += oneDigitPrepend : (i > 9 && i <= 99) ? outputElement.innerHTML += twoDigitPrepend : "";
+      (i <= 9) ? outputElement.innerHTML += oneDigitPrepend : (i > 9 && i <= 99) ? outputElement.innerHTML += twoDigitPrepend : null;
       // Change value of isEven based on current num
       isEven = (i) % 2 === 0 ? true : false;
       // Create string

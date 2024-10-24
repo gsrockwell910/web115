@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
       let newWord = " ";
       let divisibleBy = [];
       // Prepend 2 zeros if number is 1 digit, 1 zero if num is 2 digits
-      (iterator <= 9) ? outputElement.innerHTML += oneDigitPrepend : (iterator > 9 && iterator <= 99) ? outputElement.innerHTML += twoDigitPrepend : "";
+      (iterator <= 9) ? outputElement.innerHTML += oneDigitPrepend : (iterator > 9 && iterator <= 99) ? outputElement.innerHTML += twoDigitPrepend : null;
       // inner loop compares i to each key of the hash, checkin for division
       for (let [key, value] of divisorMap) {
         if (checkDivision(iterator, key)) {
