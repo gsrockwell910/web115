@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
       return isDivisible;
     }
     // Outer Loop - controls total iterations
-    do {
+    while (iterator <= loopControl) {
       // vars to hold assembled word and numbers that are divisible by the keys
       let newWord = " ";
       let divisibleBy = [];
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // assemble new word
       newWord !== " " ? outputElement.innerHTML += `${iterator}) ${newWord} - This number is divisible by ${divisibleBy}.<br>` : outputElement.innerHTML += `${iterator}) This number is not divisible by any number in the hash.<br>`;
       iterator++;
-    } while (iterator <= loopControl);
+    }
     // Clear output if there is any
     outputSection.innerText = "";
     //append element
