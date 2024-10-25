@@ -449,8 +449,8 @@ body > footer > section > span {
 
 footer > section:first-of-type a {
   color: var(--primary-color4); 
-  border-left: 2px solid var(--primary-color4); 
-  border-right: 2px solid var(--primary-color4);
+  /*border-left: 2px solid var(--primary-color4); 
+  border-right: 2px solid var(--primary-color4);*/
   padding: 0px 5px;
   margin: 0px 5px;
   display: flex;
