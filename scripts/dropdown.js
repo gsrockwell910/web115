@@ -3,8 +3,8 @@
 const dropdownUL = document.getElementById("dropdown");
 const dropdownButton = document.querySelector(".dropdownButton");
 // Text vars
-const toggledText = "⤴ FizzBuzz";
-const untoggledText = "⤵ FizzBuzz";
+const toggledText = "FizzBuzz <sub>&and;</sub>";
+const untoggledText = "FizzBuzz <sub>&or;</sub>";
 // Flag
 let isToggled = false;
 // Toggle class
@@ -16,7 +16,7 @@ function toggleMenu() {
     // add show class to make list visible
     dropdownUL.classList.add("show");
     // Change text
-    dropdownButton.textContent = toggledText;
+    dropdownButton.innerHTML = toggledText;
     // State is toggled
   } else {
     // Untoggle it
@@ -37,7 +37,7 @@ function toggleMenu() {
     // Remove class
     dropdownUL.classList.remove("show");
     // Change text
-    dropdownButton.textContent = untoggledText;
+    dropdownButton.innerHTML = untoggledText;
   };
 
   // Close menu on mobile if user touches any part of the window that is not the dropdown menu or dd menu links
@@ -53,6 +53,6 @@ function toggleMenu() {
     // Remove class
     dropdownUL.classList.remove("show");
     // Change text
-    dropdownButton.textContent = untoggledText;
+    dropdownButton.innerHTML = untoggledText;
   };
 }
