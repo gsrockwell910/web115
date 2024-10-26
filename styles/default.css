@@ -89,13 +89,25 @@ header {
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
   min-width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 480px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+  }
 }
 
 h1 {
   margin: 0px;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 3em;
   font-weight: bold;
+  align-self: center;
 }
 
 /* Try to find a way to do this without using ID. 
@@ -367,6 +379,14 @@ dl > dd {
 body > main > section > img {
   max-width: 25%;
   margin: 2% auto;
+}
+
+header > img {
+  max-width: 8em;
+  height: 5em;
+  margin-left: 1em;
+  align-self: center;
+  justify-self: flex-start;
 }
 
 /* Styling for images */
