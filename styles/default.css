@@ -97,7 +97,6 @@ header {
   header {
     display: flex;
     flex-direction: column;
-    margin-bottom: 1em;
   }
 }
 
@@ -385,6 +384,7 @@ header > img {
   max-width: 8em;
   height: 5em;
   margin-left: 1em;
+  margin-bottom: 1em;
   align-self: center;
   justify-self: flex-start;
 }
