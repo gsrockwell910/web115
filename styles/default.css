@@ -376,7 +376,8 @@ dl > dd {
 
 /* Image styling */
 body > main > section > img {
-  max-width: 25%;
+  max-width: 8em;
+  height: 5em;
   margin: 2% auto;
 }
 
