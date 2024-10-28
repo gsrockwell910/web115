@@ -3,8 +3,8 @@
 const dropdownUL = document.getElementById("dropdown");
 const dropdownButton = document.querySelector(".dropdownButton");
 // Text vars
-const toggledText = "FizzBuzz <sub>&and;</sub>";
-const untoggledText = "FizzBuzz <sub>&or;</sub>";
+const toggledText = "FizzBuzz <sub class=\"dropdownButton\">&and;</sub>";
+const untoggledText = "FizzBuzz <sub class=\"dropdownButton\">&or;</sub>";
 // Flag
 let isToggled = false;
 // Toggle class
