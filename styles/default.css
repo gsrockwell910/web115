@@ -284,7 +284,7 @@ button:hover {
 /* Styling for the first link within main p elements */
 main > p > a:any-link,
 li > strong > a:any-link {
-  color: var(--primary-color2); 
+  color: var(--primary-color1); 
 }
 
 /* Hover state for links within main p elements */
