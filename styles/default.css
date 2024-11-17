@@ -430,7 +430,7 @@ p,
   max-width: 55%;
   background: var(--primary-color3);
   overflow-y: scroll;
-  /*scrollbar-width: none;*/
+  scrollbar-width: none;
   scroll-behavior: smooth;
   max-height: 60vh;
   margin-left: auto;
