@@ -455,19 +455,19 @@ footer {
 
 /* Footer link styles */
 footer a {
-  color: var(--primary-color3); 
+  color: var(--primary-color4); 
 }
 
 footer a:visited {
-  color: var(--secondary-color3);
+  color: var(--primary-color3);
 }
 
 footer > span > strong > a:visited {
-  color: var(--secondary-color3);
+  color: var(--primary-color3);
 }
 
 footer > span > strong > a {
-  color: var(--primary-color3);
+  color: var(--primary-color4);
 }
 
 body > footer > span {
