@@ -281,11 +281,6 @@ button:hover {
   text-decoration: underline;
 }
 
-/*section {
-  min-width: 75%;
-  margin: 0%;
-}*/
-
 /* Styling for the first link within main p elements */
 main > p > a:any-link,
 li > strong > a:any-link {
@@ -298,16 +293,6 @@ li > strong > a:hover {
   color: var(--primary-color4); 
   text-decoration: underline;
 }
-
-/*main > section {
-  display: flex;
-  flex-direction: column;
-  max-width: 75%;
-  padding: 0px;
-  margin-top: 0%;
-  color: var(--primary-color4); 
-  background-color: var(--primary-color3); 
-}*/
 
 /* Color Table */
 table {
@@ -470,19 +455,19 @@ footer {
 
 /* Footer link styles */
 footer a {
-  color: var(--secondary-color1); 
+  color: var(--primary-color3); 
 }
 
 footer a:visited {
-  color: var(--primary-color4);
+  color: var(--secondary-color3);
 }
 
 footer > span > strong > a:visited {
-  color: var(--primary-color4);
+  color: var(--secondary-color3);
 }
 
 footer > span > strong > a {
-  color: var(--secondary-color2);
+  color: var(--primary-color3);
 }
 
 body > footer > span {
