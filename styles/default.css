@@ -459,11 +459,11 @@ footer a {
 }
 
 footer a:visited {
-  color: var(--secondary-color3);
+  color: var(--primary-color4);
 }
 
 footer > span > strong > a:visited {
-  color: var(--secondary-color3);
+  color: var(--primary-color4);
 }
 
 footer > span > strong > a {
