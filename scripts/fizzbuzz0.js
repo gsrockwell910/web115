@@ -26,7 +26,13 @@ document.addEventListener("DOMContentLoaded", function () {
     // Update greeting with custom greeting that uses full name 
     greeting.textContent = `Hello, ${fullName}, Welcome to RhinoVision Software!`;
     // prompt user to enter a number and store in variable
-    const loopControl = parseInt(prompt(`How high do you want to count, ${firstName}`));
+    let loopControl = parseInt(prompt(`How high do you want to count, ${firstName}`));
+    // validate input.
+    while (loopControl <= 0) {
+      // prompt again
+      alert("Your input could not be verified. Please enter a number greater than 0.");
+      loopControl = parseInt(prompt(`How high do you want to count, ${firstName}`));
+    }
     // Strings to prepend to outputElement if i is less than 3 digits
     const oneDigitPrepend = "00";
     const twoDigitPrepend = "0";
