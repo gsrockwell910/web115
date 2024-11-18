@@ -20,8 +20,9 @@ document.addEventListener("DOMContentLoaded", function () {
     let firstName = firstNameField.value.trim();
     let lastName = lastNameField.value.trim();
     let middleInitial = middleInitialField.value.trim(); 
+    let fullName;
     // Store formatted full name in variable
-    const fullName = firstName + " " + middleInitial + ". " + lastName;
+    middleInitial ? fullName = firstName + " " + middleInitial + ". " + lastName : fullName = firstName + " " + lastName;
     // Update greeting with custom greeting that uses full name 
     greeting.textContent = `Hello, ${fullName}, Welcome to RhinoVision Software!`;
     // prompt user to enter a number and store in variable
