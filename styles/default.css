@@ -186,7 +186,6 @@ nav ul li a:hover,
 li > button:hover {
   background-color: var(--primary-color2);
   color: var(--secondary-color3); 
-  /*text-decoration: underline;*/
 }
 
 /* Navigation link active state */
@@ -250,7 +249,7 @@ body > main > ul {
 form {
   display: flex;
   flex-direction: column;
-  padding: 2em;
+  padding: 3em;
   margin-top: 1.2em;
   margin-bottom: 1.2em;
   box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
