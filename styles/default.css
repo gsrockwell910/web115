@@ -128,6 +128,14 @@ h2 {
   margin-left: 12.5%;
 }
 
+body > main:nth-child(3) > p {
+  margin-top: -1.2em;
+}
+
+body > main:nth-child(3) > img {
+  margin-top: -1.2em;
+}
+
 /* Link styles */
 a {
   color: var(--primary-color4);
