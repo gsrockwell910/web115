@@ -12,8 +12,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const firstNameField = document.getElementById("first-name");
     const lastNameField = document.getElementById("last-name");
     const middleInitialField = document.getElementById("middle-initial");
-    const outputSection = document.getElementById("output-section");
-    const greeting = document.getElementById("greeting");
+    const outputSection = document.querySelector("section");
+    const greeting = document.querySelector("h3");
     // Grab field inputs and store in variables, all fields will be present 
     // due to fields being required in HTML, should validate to ensure only 
     // proper input will be processed (TODO).
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Store formatted full name in variable
     middleInitial ? fullName = firstName + " " + middleInitial + ". " + lastName : fullName = firstName + " " + lastName;
     // Update greeting with custom greeting that uses full name 
-    greeting.textContent = `Hello, ${fullName}, Welcome to RhinoVision Software!`;
+    greeting.textContent = `Hello, ${fullName}! Welcome to RhinoVision Software`;
     // prompt user to enter a number and store in variable
     let loopControl = parseInt(prompt(`How high do you want to count, ${firstName}`));
     // validate input.

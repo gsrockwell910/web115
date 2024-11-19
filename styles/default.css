@@ -128,12 +128,24 @@ h2 {
   margin-left: 12.5%;
 }
 
+p,
+body > main:nth-child(3) > p:nth-child(2) {
+  max-width: 55%;
+  font-size: 1.3em;
+  line-height: 1.4em;
+  color: var(--primary-color4);
+  padding: 20px;
+  margin-top: .5em;
+}
+
 body > main:nth-child(3) > p {
   margin-top: -1.2em;
 }
 
 body > main:nth-child(3) > img {
-  margin-top: -1.2em;
+  max-width: 8em;
+  height: 5em;
+  margin-top: -.75em;
 }
 
 /* Link styles */
@@ -379,7 +391,7 @@ dl > dd {
 }
 
 /* Image styling */
-body > main > img {
+body > main:nth-child(3) > img:nth-child(20) {
   max-width: 8em;
   height: 5em;
   margin: 2% auto;
@@ -408,18 +420,14 @@ figcaption {
 }
 
 /* Paragraph styling */
-p, 
-#output-section > p, 
-#fizzbuzz1-output > p, 
-#fizzbuzz2-output > p,
-#fizzbuzz3-output > p{
+section > p{
   font-size: 1.3em; 
   font-variant-numeric: tabular-nums;
   line-height: 1.4em; 
   color: var(--primary-color4);
   border-radius: 10px;
   padding: 20px;
-  max-width: 55%;
+  max-width: 100%;
   background: var(--primary-color3);
   overflow-y: scroll;
   scrollbar-width: none;

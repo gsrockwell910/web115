@@ -3,7 +3,7 @@
 document.addEventListener("DOMContentLoaded", function () {
   //Grab all necessary elements
   const generateButton = document.getElementById("generate-button-v3");
-  const outputSection = document.getElementById("fizzbuzz3-output");
+  const outputSection = document.querySelector("section");
 
   // Listen for click event on button
   generateButton.addEventListener("click", function (event) {
