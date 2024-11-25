@@ -234,7 +234,7 @@ body > nav > ul > li > ul:nth-child(2) > li > a{
   display: flex;
   background-color: var(--primary-color2);
   color: var(--secondary-color3);
-  width: 63.3%;
+  width: 64.7%;
 } 
 
 body > nav > ul > li > ul:nth-child(2) > li > a {
@@ -298,6 +298,15 @@ button:hover {
   background-color: var(--primary-color3);
   color: var(--primary-color4);
   text-decoration: underline;
+}
+
+.dropdownButton .triangle {
+  display: inline-block;
+  text-decoration: none;  /* No underline on the triangle */
+}
+
+.dropdownButton:hover .triangle {
+  text-decoration: none; 
 }
 
 /* Styling for the first link within main p elements */
