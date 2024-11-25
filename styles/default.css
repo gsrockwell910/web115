@@ -287,7 +287,7 @@ input {
 
 button {
   border-color: var(--primary-color4);
-  color: var(--primary-color3);
+  color: var(--secondary-color2);
   padding: .3em;
   margin: .5em;
   background-color: var(--primary-color4);
