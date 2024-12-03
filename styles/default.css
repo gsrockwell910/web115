@@ -375,7 +375,7 @@ td[data-color="sec1"] {
 
 td[data-color="sec2"] {
   background-color: var(--secondary-color2);
-  color: var(--secondary-color3)
+  color: var(--primary-color3)
 }
 
 td[data-color="sec3"] {
