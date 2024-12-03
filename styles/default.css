@@ -503,7 +503,7 @@ body > footer > span {
   font-size: 1.2em;
 }
 
-footer a:not(:first-of-type) {
+footer a:not(:first-of-type) + a {
   padding: 0px 5px;
   margin: 0px 5px;
   display: flex;
