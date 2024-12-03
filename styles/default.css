@@ -483,11 +483,11 @@ footer a {
 }
 
 footer a:visited {
-  color: var(--secondary-color1); 
+  color: var(--secondary-color2); 
 }
 
 footer > span > strong > a:visited {
-  color: var(--secondary-color1);
+  color: var(--secondary-color2);
 }
 
 footer > span > strong > a {
