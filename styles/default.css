@@ -312,7 +312,7 @@ button:hover {
 /* Styling for the first link within main p elements */
 main > p > a:any-link,
 li > strong > a:any-link {
-  color: var(--secondary-color1); 
+  color: var(--primary-color2); 
 }
 
 /* Hover state for links within main p elements */
@@ -479,7 +479,7 @@ footer {
 
 /* Footer link styles */
 footer a {
-  color: var(--primary-color4); 
+  color: var(--secondary-color1); 
 }
 
 footer a:visited {
@@ -491,7 +491,7 @@ footer > span > strong > a:visited {
 }
 
 footer > span > strong > a {
-  color: var(--primary-color4);
+  color: var(--secondary-color1);
 }
 
 body > footer > span {
@@ -503,7 +503,8 @@ body > footer > span {
   font-size: 1.2em;
 }
 
-footer a:not(:first-of-type) + a {
+footer a:not(:first-of-type) + a,
+body > footer > span > a{
   padding: 0px 5px;
   margin: 0px 5px;
   display: flex;
