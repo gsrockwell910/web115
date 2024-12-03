@@ -6,8 +6,8 @@
   --primary-color3: #F8F4F1;
   --primary-color4: #1F2A38;
 
-  --secondary-color1: #582630;
-  --secondary-color2: #FFD400;
+  --secondary-color1: #6D3F66;
+  --secondary-color2: #C96C3D;
   --secondary-color3: #000000;
 }
 
@@ -312,7 +312,7 @@ button:hover {
 /* Styling for the first link within main p elements */
 main > p > a:any-link,
 li > strong > a:any-link {
-  color: var(--primary-color2); 
+  color: var(--secondary-color2); 
 }
 
 /* Hover state for links within main p elements */
@@ -370,18 +370,19 @@ td[data-color="prim4"] {
 
 td[data-color="sec1"] {
   background-color: var(--secondary-color1);
-  color: var(--secondary-color2);
+  color: var(--secondary-color3);
 }
 
 td[data-color="sec2"] {
   background-color: var(--secondary-color2);
-  color: var(--secondary-color1)
+  color: var(--secondary-color3)
 }
 
 td[data-color="sec3"] {
   background-color: var(--secondary-color3);
   color: var(--primary-color3);
 }
+
 
 /* Selects Fonts and Color Scheme uls */
 dl {
@@ -483,11 +484,11 @@ footer a {
 }
 
 footer a:visited {
-  color: var(--secondary-color2); 
+  color: var(--secondary-color1); 
 }
 
 footer > span > strong > a:visited {
-  color: var(--secondary-color2);
+  color: var(--secondary-color1);
 }
 
 footer > span > strong > a {
