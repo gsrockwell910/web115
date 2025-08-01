@@ -304,6 +304,12 @@ button:hover {
   text-decoration: underline;
 }
 
+main > button:hover {
+  background-color: var(--primary-color3);
+  color: var(--primary-color4);
+  text-decoration: none;
+}
+
 .dropdownButton .triangle {
   display: inline-block;
   text-decoration: none;  /* No underline on the triangle */
