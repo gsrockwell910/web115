@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   //Grab all necessary elements
   const generateButton = document.getElementById("generate-button");
   const outputSection = document.querySelector("section");
+  const outputH2 = document.getElementsByClassName("output-header")[0];
 
   // Listen for click event on button
   generateButton.addEventListener("click", function (event) {
@@ -46,6 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Clear output if there is any
     outputSection.innerHTML = "";
     //append element
+    outputSection.appendChild(outputH2);
     outputSection.appendChild(outputElement);
   });
 });

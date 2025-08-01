@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const lastNameField = document.getElementById("last-name");
     const middleInitialField = document.getElementById("middle-initial");
     const outputSection = document.querySelector("section");
+    const outputH2 = document.getElementsByClassName("output-header")[0];
     const greeting = document.querySelector("h3");
     // Grab field inputs and store in variables, all fields will be present 
     // due to fields being required in HTML, should validate to ensure only 
@@ -54,6 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Clear output if there is any
     outputSection.innerHTML = "";
     // Append element
+    outputSection.appendChild(outputH2);
     outputSection.appendChild(outputElement);
   });
 });

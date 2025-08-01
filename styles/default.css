@@ -387,6 +387,10 @@ td[data-color="sec3"] {
   color: var(--primary-color3);
 }
 
+.output-header
+{
+  text-align: center;
+}
 
 /* Selects Fonts and Color Scheme uls */
 dl {
