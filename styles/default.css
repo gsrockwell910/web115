@@ -421,6 +421,15 @@ header img {
   margin-right: .5em;
 }
 
+@media (max-width: 480px) {
+  header img {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 /*body > main:nth-child(3) > img:nth-child(13)*/
 
 /* Styling for images */
