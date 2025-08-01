@@ -401,9 +401,9 @@ dl > dd {
 }
 
 /* Image styling */
-body > main:nth-child(3) > img:nth-child(20) {
-  max-width: 8em;
-  height: 5em;
+body > main:nth-child(3) > img:nth-child(13) {
+  max-width: 9em;
+  height: 6em;
   margin: 2% auto;
 }
 
@@ -412,6 +412,8 @@ header img {
   height: 2em;
   margin-right: .5em;
 }
+
+/*body > main:nth-child(3) > img:nth-child(13)*/
 
 /* Styling for images */
 body > main > figure > img {
